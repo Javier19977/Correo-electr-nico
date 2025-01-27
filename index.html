@@ -6,8 +6,8 @@
     <title>Correo Electrónico</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7fa;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,48 +18,66 @@
         .container {
             background-color: #ffffff;
             padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 90%;
-            max-width: 500px;
+            max-width: 450px;
+            border: 1px solid #e1e4e8;
         }
         h1 {
+            font-size: 2.4rem;
             color: #333333;
-            font-size: 2rem;
+            margin-bottom: 20px;
         }
         p {
-            color: #555555;
+            color: #777777;
             font-size: 1rem;
-            line-height: 1.6;
+            margin-bottom: 15px;
+            line-height: 1.5;
         }
         .email {
             font-size: 1.2rem;
             font-weight: bold;
             color: #0066cc;
-            margin: 10px 0;
+            margin: 15px 0;
+            text-transform: lowercase;
         }
         .button {
-            font-size: 1rem;
+            font-size: 1.1rem;
             text-decoration: none;
             color: white;
-            background-color: #007bff;
-            padding: 12px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            background-color: #0066cc;
+            padding: 12px 25px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #005bb5;
+            transform: scale(1.05);
+        }
+        .button:active {
+            transform: scale(1);
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555555;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Mi Correo Electrónico</h1>
-        <p>Si deseas contactarme, utiliza el siguiente correo:</p>
+        <p>Si deseas contactarme, puedes utilizar el siguiente correo:</p>
         <p class="email">javiervargas77jordan@gmail.com</p>
         <p>Haz clic en el siguiente botón para enviarme un mensaje:</p>
         <a href="mailto:javiervargas77jordan@gmail.com" class="button">Enviar Correo</a>
+        <div class="footer">
+            <p>Gracias por tu interés. Estoy disponible para cualquier consulta.</p>
+        </div>
     </div>
 </body>
 </html>
+
+
