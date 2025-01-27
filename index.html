@@ -7,34 +7,36 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f4f8;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            color: #fff;
         }
         .container {
             background-color: #ffffff;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             text-align: center;
             width: 90%;
             max-width: 450px;
             border: 1px solid #e1e4e8;
         }
         h1 {
-            font-size: 2.4rem;
+            font-size: 2.5rem;
             color: #333333;
             margin-bottom: 20px;
+            font-weight: bold;
         }
         p {
             color: #777777;
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 15px;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .email {
             font-size: 1.2rem;
@@ -44,13 +46,14 @@
             text-transform: lowercase;
         }
         .button {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             text-decoration: none;
             color: white;
             background-color: #0066cc;
-            padding: 12px 25px;
+            padding: 12px 30px;
             border-radius: 30px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border: none;
         }
         .button:hover {
             background-color: #005bb5;
@@ -64,6 +67,19 @@
             font-size: 0.9rem;
             color: #555555;
         }
+        .socials {
+            margin-top: 20px;
+        }
+        .socials a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #0066cc;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        .socials a:hover {
+            color: #005bb5;
+        }
     </style>
 </head>
 <body>
@@ -73,6 +89,13 @@
         <p class="email">javiervargas77jordan@gmail.com</p>
         <p>Haz clic en el siguiente botón para enviarme un mensaje:</p>
         <a href="mailto:javiervargas77jordan@gmail.com" class="button">Enviar Correo</a>
+
+        <div class="socials">
+            <p>También puedes seguirme en:</p>
+            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
+            <a href="https://github.com/tu-perfil" target="_blank">GitHub</a>
+        </div>
+
         <div class="footer">
             <p>Gracias por tu interés. Estoy disponible para cualquier consulta.</p>
         </div>
